@@ -220,6 +220,8 @@ void VID_MenuInit( void )
 		"[1152 864 ]",
 		"[1280 960 ]",
 		"[1600 1200]",
+		"[1920 1080]",
+		"[2560 1440]",
 		0
 	};
 	static const char *refs[] =
@@ -298,7 +300,7 @@ void VID_MenuInit( void )
 		s_ref_list[i].itemnames = refs;
 
 		s_mode_list[i].generic.type = MTYPE_SPINCONTROL;
-		s_mode_list[i].generic.name = "video mode";
+		s_mode_list[i].generic.name = "resolution";
 		s_mode_list[i].generic.x = 0;
 		s_mode_list[i].generic.y = 10;
 		s_mode_list[i].itemnames = resolutions;
